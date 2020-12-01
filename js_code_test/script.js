@@ -119,6 +119,7 @@ jQuery(document).ready(function($){
     setTimeout(showTr, 1000)
 
     function showTr() {
+        $("body").show();
         $('#nav').remove();
         $('#myTable').after('<div class="text-right" id="nav"></div>');
         var rowsShown = 5;

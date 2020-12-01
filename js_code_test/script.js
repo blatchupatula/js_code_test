@@ -55,7 +55,7 @@ jQuery(document).ready(function($){
                 },
                 success: function (data) {
                     $(".option-"+searchIDs[i]).remove();
-                    if($('#myTable tr.test').length % 4 == 0){
+                    if($('#myTable tr.test').length % 4 == 0 && page_num >= 1){
                         page_num = page_num - 1;
                     }
                     $(".pagination-"+page_num).click();

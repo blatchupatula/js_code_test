@@ -1,8 +1,8 @@
 
 jQuery(document).ready(function($){
     $.get("https://jsonplaceholder.typicode.com/users/", function(data, status){
-        for (i=1; i<data.length; i++){
-            $('#myTable tr:last').after('<tr name-'+ data[i]['id'] +'="'+ data[i]['name'] +'" email-'+ data[i]['id'] +'="'+ data[i]['email'] +'" class=option-'+ data[i]['id'] +'><td class="td-'+data[i]['id']+'"><input type="checkbox" value="'+ data[i]['id'] +'" class="check_input" name="check"></td><td class=user-id-'+data[i]['id']+'>'+ data[i]['id'] +'</td><td class=user-name-'+data[i]['id']+'>'+ data[i]['name'] +'</td><td class=user-email-'+data[i]['id']+'>'+ data[i]['email'] +'</td></tr>');
+        for (i=0; i<data.length; i++){
+            $('#myTable tr:last').after('<tr name-'+ data[i]['id'] +'="'+ data[i]['name'] +'" email-'+ data[i]['id'] +'="'+ data[i]['email'] +'" class="test option-'+ data[i]['id'] +'"><td class="td-'+data[i]['id']+'"><input type="checkbox" value="'+ data[i]['id'] +'" class="check_input" name="check"></td><td class=user-id-'+data[i]['id']+'>'+ data[i]['id'] +'</td><td class=user-name-'+data[i]['id']+'>'+ data[i]['name'] +'</td><td class=user-email-'+data[i]['id']+'>'+ data[i]['email'] +'</td></tr>');
         }
     });
 
@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
             },
             success: function (data) {
                 $('#addUser').modal('hide');
-                $('#myTable tr:last').after('<tr name-'+ data['id'] +'="'+ user_name +'" email-'+ data['id'] +'="'+ user_email +'" class=option-'+ data['id'] +'><td class="td-'+data['id']+'"><input type="checkbox" value="'+ data['id'] +'" class="check_input" name="check"></td><td class=user-id-'+data['id']+'>'+ data['id'] +'</td><td class=user-name-'+data['id']+'>'+ user_name +'</td><td class=user-email-'+data['id']+'>'+ user_email +'</td></tr>');
+                $('#myTable tr:last').after('<tr name-'+ data['id'] +'="'+ user_name +'" email-'+ data['id'] +'="'+ user_email +'" class="test option-'+ data['id'] +'"><td class="td-'+data['id']+'"><input type="checkbox" value="'+ data['id'] +'" class="check_input" name="check"></td><td class=user-id-'+data['id']+'>'+ data['id'] +'</td><td class=user-name-'+data['id']+'>'+ user_name +'</td><td class=user-email-'+data['id']+'>'+ user_email +'</td></tr>');
             }
         });
     })
@@ -39,7 +39,20 @@ jQuery(document).ready(function($){
             searchIDs.push($(this).val());
         });
         $.each(searchIDs, function(i){
-            $(".option-"+searchIDs[i]).remove();
+            $.ajax({
+                url: "https://jsonplaceholder.typicode.com/users/"+searchIDs[i],
+                method: "DELETE",
+                body: JSON.stringify({
+                    id: searchIDs[i],
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                },
+                success: function (data) {
+                    $(".option-"+searchIDs[i]).remove();
+                    showTr();
+                }
+            })
         })
     });
 
@@ -76,15 +89,56 @@ jQuery(document).ready(function($){
         var userName = $(".edit-user-name").val();
         var userEmail = $(".edit-user-email").val();
 
-        $('#editUser').modal('hide');
+        $.ajax({
+            url: "https://jsonplaceholder.typicode.com/users/"+userId,
+            method: "PUT",
+            body: JSON.stringify({
+                id: userId,
+                name: userName,
+                email: userEmail,
+            }),
+            headers: {
+                'Content-type': 'application/json; charset=UTF-8',
+            },
+            success: function (data) {
+                console.log(data);
+                $('#editUser').modal('hide');
 
-        $(".user-name-"+userId).text(userName);
-        $(".user-email-"+userId).text(userEmail);
+                $(".user-name-"+userId).text(userName);
+                $(".user-email-"+userId).text(userEmail);
 
-        $(".option-"+userId).attr('name-'+userId, userName);
-        $(".option-"+userId).attr('email-'+userId, userEmail);
+                $(".option-"+userId).attr('name-'+userId, userName);
+                $(".option-"+userId).attr('email-'+userId, userEmail);
+            }
+        });
         
     })
+
+
+    setTimeout(showTr, 1000)
+
+    function showTr() {
+        $('#nav').remove();
+        $('#myTable').after('<div class="text-right" id="nav"></div>');
+        var rowsShown = 5;
+        var rowsTotal = $('#myTable tr.test').length;
+        var numPages = rowsTotal/rowsShown;
+        for(i = 0;i < numPages;i++) {
+            var pageNum = i + 1;
+            $('#nav').append('<a href="#" rel="'+i+'">'+pageNum+'</a> ');
+        }
+        $('#myTable tr.test').slice(0, rowsShown).show();
+        $('#nav a:first').addClass('active');
+        $('#nav a').bind('click', function(){
+            $('#nav a').removeClass('active');
+            $(this).addClass('active');
+            var currPage = $(this).attr('rel');
+            var startItem = currPage * rowsShown;
+            var endItem = startItem + rowsShown;
+            $('#myTable tr.test').css('opacity','0.0').hide().slice(startItem, endItem).
+            css('display','table-row').animate({opacity:1}, 300);
+        });
+    }
 
     
     

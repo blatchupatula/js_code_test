@@ -16,7 +16,7 @@
             table {
               font-family: arial, sans-serif;
               border-collapse: collapse;
-              width: 80%;
+              width: 100%;
             }
             
             td, th {
@@ -28,14 +28,32 @@
             tr:nth-child(even) {
               background-color: #dddddd;
             }
+
+            #myTable tr.test {
+              display: none;
+            }
+
+            a.active{
+              color: white;
+              background: blue;
+              border-radius: 5px;
+              padding: 1px;
+            }
+            
+            #nav {
+              margin: 20px 30px;
+            }
             </style>
 
     </head>
     <body>
         <div>
             <h1>List of Users</h1>
-            <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addUser">Add</button>
-            <button type="button" class="btn btn-primary edit-btn" disabled  data-toggle="modal" data-target="#editUser">Edit</button>
+            <div class="text-right mr-3 mb-3">
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#addUser">Add</button>
+              <button type="button" class="btn btn-primary edit-btn" disabled  data-toggle="modal" data-target="#editUser">Edit</button>
+            </div>
+            
             <table id="myTable">
                 <tr>
                     <th><input type="checkbox" id="checkAll"></th>
@@ -46,7 +64,7 @@
             </table>
             
 
-            <button type="button" class="btn btn-info user-delete-btn">Delete</button>
+            <button type="button" class="btn btn-sm btn-info user-delete-btn ml-3 mt-3">Delete</button>
         </div>
 
         <div class="modal" id="addUser">

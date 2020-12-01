@@ -23,6 +23,7 @@ jQuery(document).ready(function($){
             success: function (data) {
                 $('#addUser').modal('hide');
                 $('#myTable tr:last').after('<tr name-'+ data['id'] +'="'+ user_name +'" email-'+ data['id'] +'="'+ user_email +'" class="test option-'+ data['id'] +'"><td class="td-'+data['id']+'"><input type="checkbox" value="'+ data['id'] +'" class="check_input" name="check"></td><td class=user-id-'+data['id']+'>'+ data['id'] +'</td><td class=user-name-'+data['id']+'>'+ user_name +'</td><td class=user-email-'+data['id']+'>'+ user_email +'</td></tr>');
+                showTr();
             }
         });
     })

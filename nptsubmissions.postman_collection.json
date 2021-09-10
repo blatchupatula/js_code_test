@@ -1,0 +1,70 @@
+{
+	"id": "5ba0464c-d241-0047-631f-bce0d7a30827",
+	"name": "nptsubmissions",
+	"description": "",
+	"order": [
+		"e232961e-97b3-459a-afe6-a78617de1fff"
+	],
+	"folders": [],
+	"folders_order": [],
+	"timestamp": 1631249381258,
+	"owner": "394453",
+	"public": false,
+	"requests": [
+		{
+			"id": "e232961e-97b3-459a-afe6-a78617de1fff",
+			"headers": "Referer: https://nbl.ext.net.nokia.com/nbl/LoA/LoACase/Edit?id=G5-18.EG.846678.03-01\nAuthorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJmYTMyYjVhYi0yNDBjLTQ3MWMtOWEyOC04ZDRlNDhmY2RhNjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81ZDQ3MTc1MS05Njc1LTQyOGQtOTE3Yi03MGY0NGY5NjMwYjAvIiwiaWF0IjoxNjMxMjQ4ODQ0LCJuYmYiOjE2MzEyNDg4NDQsImV4cCI6MTYzMTI1Mjc0NCwiYWNyIjoiMSIsImFpbyI6IkUyWmdZTWg0K3JKaENZL3VRbmxYL2pMWlJjOEx4VzRZWGx0YjJoei9MM3ZOdysrOGxWc0IiLCJhbXIiOlsicHdkIiwicnNhIl0sImFwcGlkIjoiZmEzMmI1YWItMjQwYy00NzFjLTlhMjgtOGQ0ZTQ4ZmNkYTYwIiwiYXBwaWRhY3IiOiIwIiwiZGV2aWNlaWQiOiIzZGJmNmI0Yi1iOWM4LTQ3ZmMtODcyNi1lNTI5M2M4M2IyMGYiLCJmYW1pbHlfbmFtZSI6IkNoYXVoYW4iLCJnaXZlbl9uYW1lIjoiQWJoaWppdCIsImlwYWRkciI6IjE1Ny4zOS4xMjcuMTg0IiwibmFtZSI6IkNoYXVoYW4sIEFiaGlqaXQgKE5va2lhIC0gSU4vTm9pZGEpIiwib2lkIjoiODNhMDg5YTktNjY1OS00ZDAzLThhZjEtYzQ4ZTYxOTcwNTc0Iiwib25wcmVtX3NpZCI6IlMtMS01LTIxLTE1OTMyNTEyNzEtMjY0MDMwNDEyNy0xODI1NjQxMjE1LTI0NjU5NTciLCJyaCI6IjAuQVJBQVVSZEhYWFdXalVLUmUzRDBUNVl3c0t1MU12b01KQnhIbWlpTlRrajgybUFRQUFFLiIsInNjcCI6IlVzZXIuUmVhZCIsInN1YiI6IjV5V1E0WWp1LWpsWlh3QzhiaUhzMnFHV3hOU3pqOXdWN1FVY0hmbS1WUW8iLCJ0aWQiOiI1ZDQ3MTc1MS05Njc1LTQyOGQtOTE3Yi03MGY0NGY5NjMwYjAiLCJ1bmlxdWVfbmFtZSI6ImFiaGlqaXQuY2hhdWhhbkBub2tpYS5jb20iLCJ1cG4iOiJhYmhpaml0LmNoYXVoYW5Abm9raWEuY29tIiwidXRpIjoibWNNVTJKUkRRRXUwbUFuSGF2SUlBQSIsInZlciI6IjEuMCJ9.G6tYpXMmD6ZLZ5vyQFh-p7W2wq-uNh8ZW0LKNlrgUFXwzguVVdqjP3zIo8UpQRcObFAKUsjltfHbeK_b23QspJYhs-FSYt2yCdYypUNsl6cLz4PuTn3zkVWdBsXxn9LVKu08-iQM7Wz5BBlt7jxZLwbMMuAnIFjR1KbFXyl6ZMzbSXbng-LXtAGDb4tcepElRAGumKGbI2aj0s0kcXLLNeApu72RTFamzbzusablLNvT1dw_9Y-BkDdfWCE5Flw9EmLZ2wlyIDKox5RXsp72xnoxEuUKWbuGlta4uvvLKzLpp5lVF-23-_iSX5kdbJXGyEpMBbJfbo5L0rBMP3F2sg\nContent-Type: application/json\nSource: EnSoBoQ\nJobId: 4\n",
+			"headerData": [
+				{
+					"key": "Referer",
+					"value": "https://nbl.ext.net.nokia.com/nbl/LoA/LoACase/Edit?id=G5-18.EG.846678.03-01",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyIsImtpZCI6Im5PbzNaRHJPRFhFSzFqS1doWHNsSFJfS1hFZyJ9.eyJhdWQiOiJmYTMyYjVhYi0yNDBjLTQ3MWMtOWEyOC04ZDRlNDhmY2RhNjAiLCJpc3MiOiJodHRwczovL3N0cy53aW5kb3dzLm5ldC81ZDQ3MTc1MS05Njc1LTQyOGQtOTE3Yi03MGY0NGY5NjMwYjAvIiwiaWF0IjoxNjMxMjQ4ODQ0LCJuYmYiOjE2MzEyNDg4NDQsImV4cCI6MTYzMTI1Mjc0NCwiYWNyIjoiMSIsImFpbyI6IkUyWmdZTWg0K3JKaENZL3VRbmxYL2pMWlJjOEx4VzRZWGx0YjJoei9MM3ZOdysrOGxWc0IiLCJhbXIiOlsicHdkIiwicnNhIl0sImFwcGlkIjoiZmEzMmI1YWItMjQwYy00NzFjLTlhMjgtOGQ0ZTQ4ZmNkYTYwIiwiYXBwaWRhY3IiOiIwIiwiZGV2aWNlaWQiOiIzZGJmNmI0Yi1iOWM4LTQ3ZmMtODcyNi1lNTI5M2M4M2IyMGYiLCJmYW1pbHlfbmFtZSI6IkNoYXVoYW4iLCJnaXZlbl9uYW1lIjoiQWJoaWppdCIsImlwYWRkciI6IjE1Ny4zOS4xMjcuMTg0IiwibmFtZSI6IkNoYXVoYW4sIEFiaGlqaXQgKE5va2lhIC0gSU4vTm9pZGEpIiwib2lkIjoiODNhMDg5YTktNjY1OS00ZDAzLThhZjEtYzQ4ZTYxOTcwNTc0Iiwib25wcmVtX3NpZCI6IlMtMS01LTIxLTE1OTMyNTEyNzEtMjY0MDMwNDEyNy0xODI1NjQxMjE1LTI0NjU5NTciLCJyaCI6IjAuQVJBQVVSZEhYWFdXalVLUmUzRDBUNVl3c0t1MU12b01KQnhIbWlpTlRrajgybUFRQUFFLiIsInNjcCI6IlVzZXIuUmVhZCIsInN1YiI6IjV5V1E0WWp1LWpsWlh3QzhiaUhzMnFHV3hOU3pqOXdWN1FVY0hmbS1WUW8iLCJ0aWQiOiI1ZDQ3MTc1MS05Njc1LTQyOGQtOTE3Yi03MGY0NGY5NjMwYjAiLCJ1bmlxdWVfbmFtZSI6ImFiaGlqaXQuY2hhdWhhbkBub2tpYS5jb20iLCJ1cG4iOiJhYmhpaml0LmNoYXVoYW5Abm9raWEuY29tIiwidXRpIjoibWNNVTJKUkRRRXUwbUFuSGF2SUlBQSIsInZlciI6IjEuMCJ9.G6tYpXMmD6ZLZ5vyQFh-p7W2wq-uNh8ZW0LKNlrgUFXwzguVVdqjP3zIo8UpQRcObFAKUsjltfHbeK_b23QspJYhs-FSYt2yCdYypUNsl6cLz4PuTn3zkVWdBsXxn9LVKu08-iQM7Wz5BBlt7jxZLwbMMuAnIFjR1KbFXyl6ZMzbSXbng-LXtAGDb4tcepElRAGumKGbI2aj0s0kcXLLNeApu72RTFamzbzusablLNvT1dw_9Y-BkDdfWCE5Flw9EmLZ2wlyIDKox5RXsp72xnoxEuUKWbuGlta4uvvLKzLpp5lVF-23-_iSX5kdbJXGyEpMBbJfbo5L0rBMP3F2sg",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Source",
+					"value": "EnSoBoQ",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "JobId",
+					"value": "4",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "https://app-web-pricingreceiver-dev-euw-storingapi.ase-all-dev-euw.appserviceenvironment.net/api/v1/status/b2e046561eeb1e84693a62e4b33f53aa24976a1d9e38a31c0abc75d0e520941b",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5ba0464c-d241-0047-631f-bce0d7a30827",
+			"data": [],
+			"dataMode": "raw",
+			"name": "https://app-web-pricingreceiver-dev-euw-storingapi.ase-all-dev-euw.appserviceenvironment.net/api/v1/status/b2e046561eeb1e84693a62e4b33f53aa24976a1d9e38a31c0abc75d0e520941b",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1631249382920,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\r\n\t\"Inputs\": [{\r\n\t\t\"InputName\": \"EnSoBoQ.BoQ_Requests\",\r\n\t\t\"Rows\": [{\r\n\t\t\t\"RequestName\": \"Test to confirm if EnSo is able to send BoQ Pricing Requests towards NPT Cloud\",\r\n\t\t\t\"Comment\": \"Some additional comment to be added to the request if needed\"\r\n\t\t}]\r\n\t}, {\r\n\t\t\"InputName\": \"EnSoBoQ.BoQ_SalesItems\",\r\n\t\t\"InputReferences\": {\r\n\t\t\t\"RequestId\": {\r\n\t\t\t\t\"InputName\": \"EnSoBoQ.BoQ_Requests\",\r\n\t\t\t\t\"ColumnName\": \"RequestId\"\r\n\t\t\t}\r\n\t\t},\r\n\t\t\"Rows\": [{\r\n\t\t\t\"SalesItemCode\": \"AAOEMMARIADB1NEO\",\r\n\t\t\t\"SalesItemQuantity\": 1.0,\r\n\t\t}, {\r\n\t\t\t\"SalesItemCode\": \"AAOEMAGMAINT001\",\r\n\t\t\t\"SalesItemQuantity\": 1.0,\r\n\t\t}, {\r\n\t\t\t\"SalesItemCode\": \"3HE16864AA\",\r\n\t\t\t\"SalesItemQuantity\": 2.0,\r\n\t\t}, {\r\n\t\t\t\"SalesItemCode\": \"NDCHW1227\",\r\n\t\t\t\"SalesItemQuantity\": 2.0,\r\n\t\t}, {\r\n\t\t\t\"SalesItemCode\": \"NDCHW1006\",\r\n\t\t\t\"SalesItemQuantity\": 2.0,\r\n\t\t}, {\r\n\t\t\t\"SalesItemCode\": \"NDCHW0261\",\r\n\t\t\t\"SalesItemQuantity\": 4.0,\r\n\t\t}]\r\n\t}]\r\n}"
+		}
+	]
+}
